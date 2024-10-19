@@ -1,0 +1,1 @@
+const addTest = require('./stringCalculator');
