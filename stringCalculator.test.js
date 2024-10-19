@@ -25,3 +25,9 @@ test('should throw an exception when negative numbers are provided', () => {
         addTest("1,-2,3");
     }).toThrow('Negative numbers not allowed: -2');
 });
+
+test('should throw an exception listing all negative numbers', () => {
+    expect(() => {
+        add("1,-2,-3,4");
+    }).toThrow('Negative numbers not allowed: -2, -3');
+});
