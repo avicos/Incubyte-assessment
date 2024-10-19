@@ -6,6 +6,7 @@ function add(numbers) {
         return parseInt(numbers);
     }
 
+    numbers = numbers.replace(/\n/g, ',');
     const numberList = numbers.split(',');
 
     let total = 0;

@@ -13,5 +13,5 @@ test('should return the sum of two numbers', () => {
 });
 
 test('should handle newlines as a delimiter', () => {
-    expect(add("1\n2,3")).toBe(6);
+    expect(addTest("1\n2,3")).toBe(6);
 });
