@@ -5,7 +5,7 @@ A simple string calculator that can handle addition of numbers provided as a str
 
 ## Features
 
-- Supports addition of numbers separated by commas, newlines, or semicolons.
+- Supports addition of numbers separated by commas, newlines, or custom delimitors.
 - Throws an error if negative numbers are provided.
 
 ## Installation
