@@ -7,3 +7,7 @@ test('should return 0 for an empty string', () => {
 test('should return the number itself when one number is passed', () => {
     expect(addTest("5")).toBe(5);
 });
+
+test('should return the sum of two numbers', () => {
+    expect(addTest("1,2")).toBe(3);
+});
