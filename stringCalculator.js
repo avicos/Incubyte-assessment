@@ -2,12 +2,9 @@ function add(numbers) {
     if (!numbers) {
         return 0;
     }
-    if(numbers.length === 1) {
-        return parseInt(numbers);
-    }
 
-    numbers = numbers.replace(/\n/g, ',');
-    numbers = numbers.replace(/;/g, ',');
+    numbers = numbers.replace(/\n/g, ',').replace(/;/g, ',');
+ 
     const numberList = numbers.split(',');
 
     let total = 0;
