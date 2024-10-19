@@ -19,3 +19,9 @@ test('should handle newlines as a delimiter', () => {
 test('should handle semicolons as a delimiter', () => {
     expect(addTest("1,2;3")).toBe(6);
 });
+
+test('should throw an exception when negative numbers are provided', () => {
+    expect(() => {
+        addTest("1,-2,3");
+    }).toThrow('Negative numbers not allowed: -2');
+});
