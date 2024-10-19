@@ -7,6 +7,7 @@ function add(numbers) {
     }
 
     numbers = numbers.replace(/\n/g, ',');
+    numbers = numbers.replace(/;/g, ',');
     const numberList = numbers.split(',');
 
     let total = 0;
